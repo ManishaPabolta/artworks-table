@@ -26,13 +26,9 @@ export default function ArtTable() {
 
   return (
     <div style={{ padding: "1rem" }}>
-      {/* ✅ Overlay */}
+      
      <CustomSelectOverlay
   currentPageData={artworks}
-  selectedIds={selectedRows
-    .map((r) => r.id)
-    .filter((id): id is number => id !== undefined)
-  }
   setSelectedIds={(ids: number[]) => {
     const rows = artworks.filter(
       (art): art is Artwork & { id: number } =>
@@ -43,7 +39,8 @@ export default function ArtTable() {
 />
 
 
-      {/* ✅ DataTable */}
+
+
       <DataTable
         value={artworks}
         loading={loading}

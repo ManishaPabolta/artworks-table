@@ -5,13 +5,11 @@ import type { Artwork } from "../types/artwork";
 
 interface Props {
   currentPageData: Artwork[];
-  selectedIds: number[];              // ✅ MUST be number[]
-  setSelectedIds: (ids: number[]) => void; // ✅ MUST be number[]
+  setSelectedIds: (ids: number[]) => void;
 }
 
 export default function CustomSelectOverlay({
   currentPageData,
-  selectedIds,
   setSelectedIds,
 }: Props) {
   const [count, setCount] = useState("");
@@ -32,7 +30,11 @@ export default function CustomSelectOverlay({
 
   return (
     <>
-      <Button label="Custom Select" onClick={(e) => overlayRef.current?.toggle(e)} />
+      <Button
+        label="Custom Select"
+        onClick={(e) => overlayRef.current?.toggle(e)}
+      />
+
       <OverlayPanel ref={overlayRef}>
         <input
           type="number"
