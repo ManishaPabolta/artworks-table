@@ -28,7 +28,22 @@ A responsive, paginated artworks table built with **React**, **TypeScript**, and
 ## 📁 Project Structure
 
 ```
-<img width="230" height="857" alt="image" src="https://github.com/user-attachments/assets/f31d4182-b567-40aa-a106-572b072256b5" />
+NEASSES
+├── artworks-table          ← React + Vite SOURCE CODE
+│   ├── src
+│   ├── public
+│   ├── package.json
+│   ├── vite.config.ts
+│   └── node_modules
+│
+├── docs                    ← 🚀 DEPLOYED BUILD (GitHub Pages)
+│   ├── index.html
+│   ├── assets
+│   └── vite.svg
+│
+├── .gitignore
+├── package-lock.json
+└── README.md
 
 ```
 
